@@ -6,11 +6,12 @@ import { fadeInLeft, fadeInRight, fadeInUp, scaleIn } from "../utils/animations"
 
 const ORANGE = "#E8722A";
 const CTA_BG = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400";
-const HERO_VIDEO_SRC = "https://www.pentafreight.com/assets/pentakulvid-Cg-CExBI.mp4";
+// Local copy in `public/` to avoid remote rate-limit (Vite serves at root `/`)
+const HERO_VIDEO_SRC = "/pentakulvid-Cg-CExBI.mp4";
 const HERO_FALLBACK_IMAGE_SRC =
   "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=2000";
-const PELI_LOGO_SRC =
-  "https://www.pentafreight.com/assets/peli_logo_vertical_full_color-BSk9BalL.png";
+// Local copy in `public/`
+const PELI_LOGO_SRC = "/peli_logo_vertical_full_color-BSk9BalL.png";
 
 function PillLogo({ children, className = "" }) {
   return (
