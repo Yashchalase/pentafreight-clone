@@ -1,58 +1,83 @@
-PROJECT: Penta Freight Website Clone
+# Penta Freight Website Clone
 
-LIVE DEMO: https://pentafreight-clone.vercel.app/
+This project is a frontend clone of the Penta Freight website built to practice UI replication, component structuring, and animation handling.
 
-GITHUB: https://github.com/Yashchalase/pentafreight-clone
+##  Live Demo
+https://pentafreight-clone.vercel.app/
 
-TECH STACK USED:
-- React 18 + Vite
+##  GitHub Repository
+https://github.com/Yashchalase/pentafreight-clone
+
+---
+
+##  Tech Stack
+
+- React 18 (with Vite)
 - Tailwind CSS
 - Framer Motion
-- React Router DOM (routing)
+- React Router DOM
 
-PAGES BUILT:
-- Homepage (/)
-- Industries (/industries)  
-- Pentakuhl (/pentakuhl)
+---
 
-APPROACH:
-- Analyzed the reference site section by section using browser devtools
-- Built shared components first (Navbar, Footer, SideBar, CookieBanner)
-- Each page assembled from reusable section components
-- Animations added using Framer Motion with whileInView for scroll triggers
-- Pixel-perfect matching using exact colors, fonts, spacing from devtools inspection
+##  Pages Implemented
 
-ASSUMPTIONS:
-- Original site uses proprietary images — replaced with Unsplash images of similar content
-- Pelican BioThermal and CoolGuard logos replaced with styled text placeholders (copyrighted assets)
-- Font approximated as system sans-serif (original font not publicly identified)
-- Some dropdown menu content not visible — implemented with placeholder links
-- Cookie banner dismissal saved to localStorage
+- `/` – Homepage  
+- `/industries` – Industries page  
+- `/pentakuhl` – Pentakuhl page  
 
-BUGS FOUND IN REFERENCE SITE:
-1. No meta description tags on any page (SEO issue)
-2. Missing alt text on multiple images (accessibility issue)
-3. No 404 page — broken URLs show blank screen
-4. Cookie banner reappears on every page refresh (no persistence)
-5. Images not optimized — no lazy loading or WebP format
-6. No aria-labels on icon-only buttons
-7. Page has no favicon
+---
 
-IMPROVEMENTS IMPLEMENTED IN CLONE:
-- Added proper meta tags on all pages
-- All images have descriptive alt text
-- Cookie banner state saved to localStorage
-- Smooth scroll behavior added globally
-- All buttons have hover and focus states
-- Framer Motion scroll animations added (not in original)
-- Fully responsive mobile layout
-- Clean component-based folder structure
+##  Approach
 
-GETTING STARTED:
+I started by analyzing the original site section-by-section using browser devtools to understand layout, spacing, and styling.
 
+Then I built reusable components like Navbar, Footer, Sidebar, and Cookie Banner so they can be shared across pages.
+
+Each page is structured using smaller section components to keep the code clean and maintainable.
+
+For animations, I used Framer Motion with `whileInView` to trigger animations on scroll.
+
+The goal was to keep the UI as close as possible to the original by matching colors, spacing, and layout through inspection.
+
+---
+
+##  Assumptions
+
+- Used Unsplash images instead of original proprietary images  
+- Replaced some logos (Pelican BioThermal, CoolGuard) with text placeholders  
+- Used system sans-serif font as the original font wasn't clearly identifiable  
+- Added placeholder links where dropdown content was not visible  
+- Cookie banner state is stored in localStorage  
+
+---
+
+##  Issues Found in Original Site
+
+- No meta description tags (SEO issue)  
+- Missing alt text on several images (accessibility issue)  
+- No 404 page (invalid routes show blank screen)  
+- Cookie banner resets on refresh  
+- Images not optimized (no lazy loading/WebP)  
+- No aria-labels on icon-only buttons  
+- No favicon  
+
+---
+
+##  Improvements Added
+
+- Added meta tags for SEO  
+- Added alt text for all images  
+- Cookie banner persists using localStorage  
+- Smooth scrolling enabled  
+- Added hover and focus states  
+- Scroll animations using Framer Motion  
+- Fully responsive design  
+- Cleaner component-based structure  
+
+---
+
+##  Getting Started
+
+```bash
 npm install
-
 npm run dev
-
-DEPLOYMENT:
-Deployed on Vercel. Connected to GitHub repo for auto-deploy on push.
