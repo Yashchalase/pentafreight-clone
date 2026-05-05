@@ -1,16 +1,58 @@
-# React + Vite
+PROJECT: Penta Freight Website Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LIVE DEMO: https://pentafreight-clone.vercel.app/
 
-Currently, two official plugins are available:
+GITHUB: https://github.com/Yashchalase/pentafreight-clone
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+TECH STACK USED:
+- React 18 + Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM (routing)
 
-## React Compiler
+PAGES BUILT:
+- Homepage (/)
+- Industries (/industries)  
+- Pentakuhl (/pentakuhl)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+APPROACH:
+- Analyzed the reference site section by section using browser devtools
+- Built shared components first (Navbar, Footer, SideBar, CookieBanner)
+- Each page assembled from reusable section components
+- Animations added using Framer Motion with whileInView for scroll triggers
+- Pixel-perfect matching using exact colors, fonts, spacing from devtools inspection
 
-## Expanding the ESLint configuration
+ASSUMPTIONS:
+- Original site uses proprietary images — replaced with Unsplash images of similar content
+- Pelican BioThermal and CoolGuard logos replaced with styled text placeholders (copyrighted assets)
+- Font approximated as system sans-serif (original font not publicly identified)
+- Some dropdown menu content not visible — implemented with placeholder links
+- Cookie banner dismissal saved to localStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+BUGS FOUND IN REFERENCE SITE:
+1. No meta description tags on any page (SEO issue)
+2. Missing alt text on multiple images (accessibility issue)
+3. No 404 page — broken URLs show blank screen
+4. Cookie banner reappears on every page refresh (no persistence)
+5. Images not optimized — no lazy loading or WebP format
+6. No aria-labels on icon-only buttons
+7. Page has no favicon
+
+IMPROVEMENTS IMPLEMENTED IN CLONE:
+- Added proper meta tags on all pages
+- All images have descriptive alt text
+- Cookie banner state saved to localStorage
+- Smooth scroll behavior added globally
+- All buttons have hover and focus states
+- Framer Motion scroll animations added (not in original)
+- Fully responsive mobile layout
+- Clean component-based folder structure
+
+GETTING STARTED:
+
+npm install
+
+npm run dev
+
+DEPLOYMENT:
+Deployed on Vercel. Connected to GitHub repo for auto-deploy on push.
